@@ -119,3 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 여기부터 HEROKU에 배포할때의 설정임.
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+ALLOWED_HOSTS = ['*']
+
