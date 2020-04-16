@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -23,7 +23,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'v-hnxf0gi2sav0&t___ll(9(7$#9rmw^w#jt!tt3akdevw*=ek'
 
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -126,5 +126,5 @@ STATIC_URL = '/static/'
 
 # 여기부터 HEROKU에 배포할때의 설정임.
 
-# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
