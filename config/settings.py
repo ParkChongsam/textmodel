@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'v-hnxf0gi2sav0&t___ll(9(7$#9rmw^w#jt!tt3akdevw*=ek'
 
-# DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
+DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
