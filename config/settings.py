@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v-hnxf0gi2sav0&t___ll(9(7$#9rmw^w#jt!tt3akdevw*=ek'
 
 # 내컴에서 runserver할때는 아래는 주석처리한다.
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
