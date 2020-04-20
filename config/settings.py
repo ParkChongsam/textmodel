@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhitenNiseMiddleware',  # 추가한곳
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # 추가한곳
 ]
 
 ROOT_URLCONF = 'config.urls'
